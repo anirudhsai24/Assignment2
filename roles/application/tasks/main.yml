@@ -1,0 +1,24 @@
+
+- name: apt update
+  apt:
+    update_cache: yes
+- name: install pip3
+  apt:
+    name: python3-pip
+    state: latest
+
+- name: installing flask
+  pip:
+    executable: pip3
+    name: flask
+    state: latest
+
+- name: copy cile
+  copy:
+    src: "{{ role_path }}/files/app.py"
+    dest: /home/ubuntu/app.py
+
+- name: run flask app
+  shell: |
+    nohup python3 app.py > log.txt 2>&1 &
+
