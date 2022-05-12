@@ -13,7 +13,7 @@
     name: flask
     state: latest
 
-- name: copy cile
+- name: copy python file to webservers
   copy:
     src: "{{ role_path }}/files/app.py"
     dest: /home/ubuntu/app.py
