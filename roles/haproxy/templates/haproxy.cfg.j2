@@ -39,5 +39,5 @@ frontend public
 
 backend nginx_web_servers
 {% for host in groups['webservers'] %}
-    server  {{ host }} {{ hostvars[host]['ansible_env'].SSH_CONNECTION.split(' ')[2] }}:80
+    server  {{ host }} {{ hostvars[host]['ansible_env'].SSH_CONNECTION.split(' ')[2] }}:8080
 {% endfor %}
