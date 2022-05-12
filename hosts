@@ -1,6 +1,6 @@
 
 
-[haproxy]
+[HAproxy]
 devhaproxy
 
 [webservers]
