@@ -12,7 +12,7 @@ Host bastionNSO
 
 
 Host devhaproxy
-  HostName 103.57.72.82
+  HostName 103.57.72.97
   User ubuntu
   Port 22
   IdentityFile /home/anirudh24/.ssh/id_rsa
