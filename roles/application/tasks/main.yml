@@ -19,6 +19,5 @@
     dest: /home/ubuntu/app.py
 
 - name: run flask app
-  shell: |
-    nohup python3 app.py > log.txt 2>&1 &
+  shell: python3 app.py&
 
